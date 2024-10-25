@@ -1,0 +1,12 @@
+body {
+   background: url(../assets/img/2.png);
+   background-repeat: no-repeat;
+   height: 130vh;
+   background-size: cover;
+}
+.modal-content {
+    background: #ffffff1a;
+    backdrop-filter: blur(5px);
+}
+
+/* Welcome to Air Tech, your ultimate destination for last-generation smartphones! Explore or wide selection of the latests brands and models at unbeatable prices. Enjoy a fluid purchase experience with detailed descriptions, reliable customer reviews, and dedicated customer service. Stay connected with Air Tech - where innovation meets customer satisfaction. */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login1.css" type="text/css">
+</head>
+<body>
+    <div class="box">
+        <span class="borderline"></span>
+        <form>
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span>Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" placeholder="" class="mdp">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Sign up</a>
+            </div>
+            <input type="submit" value="LOGIN">
+        </form>
+    </div>
+
+    <script>
+        function affmdp() {
+            let aff_mdp = document.querySelector(".mdp")
+            if (aff_mdp.type === 'password') {
+                aff_mdp.type = 'text';
+            } else {
+                aff_mdp.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>

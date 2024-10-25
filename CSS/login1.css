@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/img/Meilleur-smartphone-moins-de-500-e.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .1);
+    border-radius: 15px;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(3px);
+}
+.borderline {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.box form {
+    position: absolute;
+    inset: 4px;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2 {
+    color:#000000c0;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.box form .inputBox {
+    position: relative;
+    width: 308px;
+    margin-top: 35px;
+}
+.box form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #0d6efd;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 1;
+}
+.box form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .inputBox input:valid ~ span , 
+.box form .inputBox input:focus ~ span {
+    color: bisque;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: aliceblue;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputBox input:valid ~ i , 
+.box form .inputBox input:focus ~ i {
+    height: 44px;
+}
+.box form .links {
+    display: flex;
+    justify-content: space-between;
+}
+.box form .links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #000;
+    text-decoration: none;
+}
+.box form .links a:hover , 
+.box form .links a:nth-child(2){
+    color: #0d6efd;
+}
+.box form input[type="submit"] {
+    border: none;
+    outline:none;
+    padding: 9px 25px;
+    background: aliceblue;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+    color: #0d6efd;
+}
+.box form input[type="submit"]:active {
+    opacity: 0.0;
+}
+.box form input[type="submit"]:hover {
+    color: #f1f1f1;
+    background: #0d6efd;
+}
